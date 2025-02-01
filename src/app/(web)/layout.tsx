@@ -1,19 +1,9 @@
-import FooterWeb from "@/components/layout/webLayout/footer";
-import HeaderWeb from "@/components/layout/webLayout/header";
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function WebLayout({ children }: { children: React.ReactNode }) {
   return (
-    
-      <div>
-          <span className="bg-red-400">header </span>
-          {children}
-
-      </div>
-    
-    
+    <div>
+      <header>📌 هدر اختصاصی برای صفحات `web`</header>
+      <main>{children}</main>
+      <footer>📌 فوتر اختصاصی برای صفحات `web`</footer>
+    </div>
   );
 }
