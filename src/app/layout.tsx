@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${iranSans.className} antialiased`}
+        className={`${iranSans.className} antialiased container`}
       >
         {children}
       </body>

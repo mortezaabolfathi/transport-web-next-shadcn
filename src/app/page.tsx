@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-
+import HomePage from "./(web)/home/page";
 
 export default function Home() {
-  return  <Button>کلید</Button>
+  return  <HomePage/>
 }
