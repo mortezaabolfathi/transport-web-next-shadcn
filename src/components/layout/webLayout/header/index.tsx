@@ -1,9 +1,17 @@
-import React from 'react'
+import DesktopHeader from "./desktopHeader";
+import MobileHeader from "./mobileHeader";
 
 const HeaderWeb = () => {
   return (
-    <div>HeaderWeb</div>
-  )
-}
+    <div>
+      {/* desktop */}
+      <DesktopHeader />
+      {/* mobile  */}
+      <div className="md:hidden block ">
+        <MobileHeader />
+      </div>
+    </div>
+  );
+};
 
-export default HeaderWeb
+export default HeaderWeb;
