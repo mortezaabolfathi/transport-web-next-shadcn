@@ -1,8 +1,11 @@
+import HeroSection from '@/template/web/home/heroSection'
 import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>HomePage in WEEEB</div>
+    <>
+    <HeroSection/>
+    </>
   )
 }
 
