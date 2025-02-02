@@ -9,7 +9,7 @@ import CallBox from "@/components/callBox";
 
 const DesktopHeader = () => {
   return (
-    <nav className="relative">
+    <nav className="relative z-10 ">
       <ul className="hidden md:flex flex-row items-center justify-center bg-background rounded-xl p-1">
         {headerData.map((item) => (
           <li key={item.id}>
