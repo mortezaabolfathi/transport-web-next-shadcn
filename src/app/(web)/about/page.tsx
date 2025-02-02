@@ -1,8 +1,8 @@
 import React from 'react'
-
+import stye from "@/style/animation.module.css"
 const AboutPage = () => {
   return (
-    <div>AboutPage</div>
+    <div className={`${stye.scaleUpCenter}`}>AboutPage</div>
   )
 }
 
