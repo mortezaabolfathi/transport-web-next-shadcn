@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
- 
+ direction: rtl;
 }
 .container {
   width: 83.33%; 
