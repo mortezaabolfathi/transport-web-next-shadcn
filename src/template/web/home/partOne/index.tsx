@@ -1,34 +1,24 @@
-import Image from 'next/image'
-import React from 'react'
-import ImageSection from "@/public/assets/image/customs_officer_2.jpg"
-import style from "@/style/animation.module.css"
-import dynamic from 'next/dynamic'
-// const MotionDiv= dynamic(
-//   ()=>import("framer-motion").then((mod)=>mod.motion.div),
-//   {ssr:false}
-// )
+import CardItemInPage from "@/components/cardItemInPage";
+import ImageSection from "@/public/assets/image/customs_officer_2.jpg";
+import style from "@/style/animation.module.css";
+import Image from "next/image";
 
 const OneSection = () => {
   return (
-    <div className="grid grid-cols-2 mt-8">
-    <div className={`flex flex-col gap-8 justify-center ${style.scaleUpCenter}`}>
-      <h2 className="text-3xl font-bold "> ترخیص کالا از صفر تا صد، از اسناد تا تحویل درب انبار</h2>
-      <p className="pr-4">
-        از دریافت اسناد تا ترخیص نهایی کالا، تمامی مراحل گمرکی را با دقت و
-        شفافیت انجام می‌دهیم. ما موانع اداری را برطرف کرده و روند ترخیص را
-        سریع و بدون دردسر می‌کنیم. تیم ما با بررسی دقیق قوانین گمرکی و ارائه
-        راهکارهای بهینه، زمان انتظار را به حداقل رسانده و از بروز مشکلات
-        احتمالی جلوگیری می‌کند. هدف ما ارائه خدماتی است که فرآیند ترخیص کالا
-        را برای مشتریان آسان‌تر و بی‌دغدغه‌تر کند.
-      </p>
-    </div>
-    <div className="flex justify-center items-center">
-    <Image src={ImageSection} alt="" className="rounded-xl" width={400} />
+    <CardItemInPage
+      // image={ImageSection}
+      text={{
+        textContent:
+          "شرکت ما با سال‌ها تجربه و تخصص در زمینه ترخیص کالا، تمامی مراحل گمرکی را با دقت و سرعت بالا انجام می‌دهد. ما تضمین می‌کنیم که کالاهای شما بدون مشکل و در کمترین زمان ممکن از گمرک ترخیص شوند. تیم ما با آشنایی کامل به قوانین و مقررات بین‌المللی و داخلی، فرآیندهای ترخیص را ساده‌تر کرده و از هرگونه تأخیر و هزینه‌های اضافی جلوگیری می‌کند. هدف ما ارائه خدماتی ایمن، سریع و مقرون‌به‌صرفه برای واردکنندگان و صادرکنندگان است.",
+        textHeader: "ترخیص کالا بدون دردسر، سریع، مطمئن و تخصصی",
+      }}
+      imageBox={<Image src={ImageSection} alt="image-ship" className={` ${style.circle}`} width={300} />}
+      buttonItem={{
+        textButton:"مطالعه بیشتر درباره  ترخیص کالا...",
+        link:"/"
+      }}
+    />
+  );
+};
 
-    </div>
-
-  </div>
-  )
-}
-
-export default OneSection
+export default OneSection;

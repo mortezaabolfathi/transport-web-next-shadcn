@@ -1,20 +1,26 @@
-import React from 'react'
-import ImageHeroSection from './imageHeroSection'
-
+import ImageCompany from "@/public/assets/image/heroImage.webp";
+import style from "@/style/animation.module.css";
+import Image from "next/image";
 const HeroSectionHomePage = () => {
   return (
     <div className="relative">
-    <ImageHeroSection />
-    <div className="absolute top-0  w-full text-primary flex flex-col justify-center items-center">
-      <h1 className="text-4xl md:text-6xl font-bold">
-        به وب‌سایت ما خوش آمدید
-      </h1>
-      <p className="mt-4 text-lg md:text-2xl">
-        بهترین تجربه را با ما داشته باشید
-      </p>
+      <div className={style.openInToOut}>
+        <Image
+          src={ImageCompany}
+          alt="Hero"
+          className="w-full  object-cover rounded-xl"
+        />
+      </div>
+      <div className="absolute top-0  w-full text-primary flex flex-col justify-center items-center">
+        <h1 className="text-4xl md:text-6xl font-bold">
+          به وب‌سایت ما خوش آمدید
+        </h1>
+       <p >
+       بهترین تجربه را با ما داشته باشید
+       </p>
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default HeroSectionHomePage
+export default HeroSectionHomePage;
