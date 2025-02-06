@@ -6,11 +6,12 @@ const SectionOne = dynamic(()=>import("@/template/web/home/partOne"))
 
 const HomePage = () => {
   return (
-    <>
-      <HeroSectionHomePage/>
+    <div className="">
+      <div className="h-[400px] md:h-auto">
+     
+      </div>
       <SectionOne/>
-
-    </>
+    </div>
   );
 };
 

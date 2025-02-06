@@ -24,12 +24,12 @@ const CardItemInPage: React.FC<TCardItemInPage> = ({
   boxColor="bg-white"
 }) => {
   return (
-    <div className={`flex ${rowRevers ?  "flex-row-reverse": "flex-row" }  ${boxColor} rounded-xl justify-around  mt-8  py-16`}>
+    <div className={`flex ${rowRevers ?  "md:flex-row-reverse flex-col": "md:flex-row flex-col" }  ${boxColor} rounded-xl justify-around  mt-8  md:py-16 p-2`}>
       <div
-        className={`w-1/2 flex flex-col gap-3 justify-center`}
+        className={`md:w-1/2 flex flex-col gap-3 justify-center`}
       >
-        <h2 className="text-3xl font-bold ">{text?.textHeader}</h2>
-        <p className="pr-6">{text?.textContent?.substring(0, 359) + "..."}</p>
+        <h2 className="md:text-3xl text-2xl font-bold ">{text?.textHeader}</h2>
+        <p className="pr-6 text-xl/9 md:text-base/7">{text?.textContent?.substring(0, 359) + "..."}</p>
         {buttonItem && (
           <div className="flex  justify-end items-start">
           <Link href={buttonItem?.link}>
@@ -39,7 +39,7 @@ const CardItemInPage: React.FC<TCardItemInPage> = ({
           </div>
         )}
       </div>
-      <div className="w-1/3 flex justify-center items-center">
+      <div className="md:w-1/3 flex justify-center items-center mt-3 mb-4 md:m-0 ">
         {imageBox}
       </div>
  
