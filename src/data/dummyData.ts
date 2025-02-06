@@ -18,23 +18,3 @@ export const headerData = [
     },
   ];
 
-export const connect = [
-  {
-    text: "اینستا ",
-    icon : "",
-    url: "/",
-    id: 1,
-  },
-  {
-    text: "واتس",
-    url: "/",
-    icon :"",
-    id: 2,
-  },
-  {
-    text: "تلگرام",
-    url: "/",
-    icon :"",
-    id: 3,
-  },
-]

@@ -1,10 +1,36 @@
 import CallBox from "@/components/callBox";
 import LogoIcon from "@/components/logoIcon";
 import { Button } from "@/components/ui/button";
-import { connect, headerData } from "@/data/dummyData";
+import { headerData } from "@/data/dummyData";
+import { IoLogoInstagram } from "react-icons/io5";
+import { TbBrandTelegram } from "react-icons/tb";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+
+
 import React from "react";
 
 const FooterWeb = () => {
+
+   const connect = [
+    {
+      text: "اینستا ",
+      icon : <IoLogoInstagram/>,
+      url: "/",
+      id: 1,
+    },
+    {
+      text: "واتس",
+      url: "/",
+      icon :<AiOutlineWhatsApp/>,
+      id: 2,
+    },
+    {
+      text: "تلگرام",
+      url: "/",
+      icon :<TbBrandTelegram/>,
+      id: 3,
+    },
+  ]
 
   return (
     <div className="flex flex-col gap-2 bg-white rounded-t-xl py-4">
