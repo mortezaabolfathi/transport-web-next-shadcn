@@ -7,8 +7,9 @@ interface TCardItemInPage {
     textContent: string;
     textHeader: string;
   };
+  boxColor ?: string;
   animationImage?: string;
-  imageBox : any;
+  imageBox : React.ReactNode;
   buttonItem?: {
     textButton: string;
     colorButton?: string;
@@ -19,10 +20,11 @@ const CardItemInPage: React.FC<TCardItemInPage> = ({
   text,
   buttonItem,
   rowRevers = false, 
-  imageBox
+  imageBox,
+  boxColor="bg-white"
 }) => {
   return (
-    <div className={`flex ${rowRevers ?  "flex-row-reverse": "flex-row" }  justify-around  mt-8`}>
+    <div className={`flex ${rowRevers ?  "flex-row-reverse": "flex-row" }  ${boxColor} rounded-xl justify-around  mt-8  py-16`}>
       <div
         className={`w-1/2 flex flex-col gap-3 justify-center`}
       >

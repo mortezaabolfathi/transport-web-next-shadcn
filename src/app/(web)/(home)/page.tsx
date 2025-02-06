@@ -9,13 +9,7 @@ const HomePage = () => {
     <>
       <HeroSectionHomePage/>
       <SectionOne/>
-      <div>asd'as;dl;aas</div>
-      <div>asd'as;dl;aas</div>
-      <div>asd'as;dl;aas</div>
-      <div>asd'as;dl;aas</div>
-      <div>asd'as;dl;aas</div>
-      <div>asd'as;dl;aas</div>
-      <div>asd'as;dl;aas</div>
+
     </>
   );
 };

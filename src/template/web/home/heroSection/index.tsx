@@ -3,7 +3,7 @@ import style from "@/style/animation.module.css";
 import Image from "next/image";
 const HeroSectionHomePage = () => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <div className={style.openInToOut}>
         <Image
           src={ImageCompany}
