@@ -12,15 +12,16 @@ interface TCardItemInPage {
   buttonItem?: {
     textButton: string;
     colorButton?: string;
-    link: string;
   };
+  linkUrl: string;
 }
 const CardItemInPage: React.FC<TCardItemInPage> = ({
   text,
   buttonItem,
   rowRevers = false, 
   imageBox,
-  boxColor="bg-white"
+  boxColor="bg-white",
+  linkUrl ="/"
 }) => {
   return (
     <div className={`flex ${rowRevers ?  "md:flex-row-reverse flex-col": "md:flex-row flex-col" }  ${boxColor} rounded-xl justify-around  mt-8  md:py-16 p-2`}>
@@ -31,7 +32,7 @@ const CardItemInPage: React.FC<TCardItemInPage> = ({
         <p className="pr-6 text-xl/9 md:text-base/7">{text?.textContent?.substring(0, 359) + "..."}</p>
         {buttonItem && (
           <div className="flex  justify-end items-start">
-          <Link href={buttonItem?.link}>
+          <Link href={linkUrl}>
             <Button size={"lg"} variant={"link"} >{buttonItem?.textButton}</Button>{" "}
           </Link>
 

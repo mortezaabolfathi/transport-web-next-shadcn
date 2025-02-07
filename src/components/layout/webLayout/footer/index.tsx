@@ -6,31 +6,29 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { TbBrandTelegram } from "react-icons/tb";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
-
 import React from "react";
 
 const FooterWeb = () => {
-
-   const connect = [
+  const connect = [
     {
       text: "اینستا ",
-      icon : <IoLogoInstagram/>,
+      icon: <IoLogoInstagram />,
       url: "/",
       id: 1,
     },
     {
       text: "واتس",
       url: "/",
-      icon :<AiOutlineWhatsApp/>,
+      icon: <AiOutlineWhatsApp />,
       id: 2,
     },
     {
       text: "تلگرام",
       url: "/",
-      icon :<TbBrandTelegram/>,
+      icon: <TbBrandTelegram />,
       id: 3,
     },
-  ]
+  ];
 
   return (
     <div className="flex flex-col gap-2 bg-white rounded-t-xl py-4">
@@ -46,13 +44,9 @@ const FooterWeb = () => {
         </p>
       </div>
       <div className="grid grid-cols-3">
-        
-         
-          <p className="text-sm px-4">
-            بشه آدرس
-          </p>
-       
-        <div className="flex flex-col items-start">   
+        <p className="text-sm px-4">بشه آدرس</p>
+
+        <div className="flex flex-col items-start">
           <p className="text-xl font-bold">دسترسی سریع</p>
           <ul className=" md:flex flex-row  justify-center  rounded-xl p-1">
             {headerData.map((item) => (
@@ -62,13 +56,11 @@ const FooterWeb = () => {
                 </Button>
               </li>
             ))}
-           
           </ul>
-        
         </div>
         <div className=" flex flex-col items-start ">
-              <p className="text-xl font-bold">راه‌های ارتباطی با بازرگانی یارد</p>
-              <ul className=" md:flex flex-row  justify-center  rounded-xl p-1">
+          <p className="text-xl font-bold">راه‌های ارتباطی با بازرگانی یارد</p>
+          <ul className=" md:flex flex-row  justify-center  rounded-xl p-1">
             {connect.map((item) => (
               <li key={item.id}>
                 <Button variant={"ghost"} className="hover:font-bold">
@@ -76,9 +68,8 @@ const FooterWeb = () => {
                 </Button>
               </li>
             ))}
-           
           </ul>
-            </div>
+        </div>
       </div>
     </div>
   );

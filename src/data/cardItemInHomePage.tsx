@@ -24,7 +24,6 @@ export const itemCardHomePage = [
     ),
     buttonItem: {
       textButton: "مطالعه بیشتر درباره  ترخیص کالا...",
-      link: "/",
     },
      rowRevers:false,
      boxColor:"bg-white",
@@ -46,7 +45,6 @@ export const itemCardHomePage = [
     ),
     buttonItem: {
         textButton: "مطالعه بیشتر درباره بازرگانی یارد...",
-        link: "/",
       },
      rowRevers:true,
      boxColor:"bg-none",
@@ -68,7 +66,6 @@ export const itemCardHomePage = [
     ),
     buttonItem:{
         textButton: "مطالعه بیشتر درباره  ترخیص کالا...",
-        link: "/",
       },
      rowRevers:false,
      boxColor:"bg-white",
@@ -90,7 +87,6 @@ export const itemCardHomePage = [
     ),
     buttonItem: {
         textButton: "مطالعه بیشتر درباره حمل از مبدا...",
-        link: "/",
       },
      rowRevers:true,
      boxColor:"bg-none",
@@ -114,7 +110,6 @@ export const itemCardHomePage = [
     ),
     buttonItem:{
         textButton: "مطالعه بیشتر درباره مجوزهای قانونی...",
-        link: "/",
       },
      rowRevers:false,
      boxColor:"bg-white",

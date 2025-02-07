@@ -15,7 +15,10 @@ const OneSection = () => {
               imageBox={item.image}
               text={item.text}
               boxColor={item.boxColor}
-              buttonItem={item.buttonItem}
+              buttonItem={{
+                textButton:item.buttonItem.textButton,
+              }}
+              linkUrl={`/detailCard/${item.id}?dis=${item.text.textHeader}`}
               rowRevers={item.rowRevers}
             />
           </span>
