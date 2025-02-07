@@ -30,7 +30,7 @@ const OneSection = () => {
     },
   ];
   return (
-    <div className={`flex flex-col  ${styleGlobal.homePage}`}>
+    <div className={`flex flex-col bg-yellow-500 ${styleGlobal.homePage}`}>
       <CardItemInPage
         // image={ImageSection}
         text={{

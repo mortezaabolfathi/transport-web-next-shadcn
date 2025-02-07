@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${iranSans.className} antialiased  overflow-x-hidden `}
+        className={`${iranSans.className}   overflow-x-hidden `}
       >
         {children}
       </body>
