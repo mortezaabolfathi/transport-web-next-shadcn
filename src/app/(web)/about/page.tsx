@@ -6,7 +6,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <div className="flex flex-col">
-      <div className="h-screen">
+      <div className="">
         <HeroSectionTemplateAbutPage />
       </div>
       <div>

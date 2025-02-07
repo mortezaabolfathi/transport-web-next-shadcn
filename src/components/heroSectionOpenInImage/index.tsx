@@ -17,7 +17,7 @@ const HeroSectionOpenInImage:React.FC<THeroSectionOpenInImage> = ({des, image, t
           className="w-full object-cover rounded-xl opacity-80"
         />
       </div>
-      <div className="md:absolute top-0  h-screen w-full text-primary md:flex flex-col justify-center items-center gap-8">
+      <div className="md:absolute top-0  w-full text-primary md:flex flex-col justify-center items-center gap-8">
         <h1 className="text-3xl text-center md:text-6xl font-bold sm:bg-white bg-opacity-80  text-blue-700  p-8 rounded-xl">
           {titleText}
         </h1>
