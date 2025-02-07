@@ -6,12 +6,8 @@ import React from "react";
 const AboutPage = () => {
   return (
     <div className="flex flex-col">
-      <div className="">
         <HeroSectionTemplateAbutPage />
-      </div>
-      <div>
         <DesAboutTextTemplate />
-      </div>
       <div className="md:flex justify-center sm:p-0 px-8">
         <AccordionAbutTemplate />
       </div>

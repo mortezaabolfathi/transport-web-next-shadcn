@@ -5,11 +5,12 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import LogoIcon from "@/components/logoIcon";
 import CallBox from "@/components/callBox";
+import Link from "next/link";
 
 const MobileHeader = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <>
+    <div>
       {/* open */}
       <span className="p-4  w-full flex items-center justify-between ">
         <LogoIcon size={40} />
@@ -20,7 +21,7 @@ const MobileHeader = () => {
         />
       </span>
 
-      <div className="relative ">
+      <div className="relative z-40">
         <ul
           className={`
           fixed h-screen w-screen top-0 font-bold flex flex-col 
@@ -40,9 +41,11 @@ const MobileHeader = () => {
               key={item.id}
               className="border-b-2 text-white font-semibold text-5xl "
             >
-              <Button variant={"ghost"} className="text-3xl">
-                {item.text}{" "}
-              </Button>
+              <Link href={item.url} onClick={() => setShowMenu(false)}>
+                <Button variant={"ghost"} className="text-3xl">
+                  {item.text}{" "}
+                </Button>
+              </Link>
             </li>
           ))}
           <span className="absolute bottom-8">
@@ -50,7 +53,7 @@ const MobileHeader = () => {
           </span>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

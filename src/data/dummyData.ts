@@ -8,11 +8,16 @@ export const headerData = [
     },
     {
       text: "خدمات",
-      url: "/",
+      url: "/servicePage",
       id: 2,
     },
     {
       text: "ارتباط با ما",
+      url: "/",
+      id: 3,
+    },
+    {
+      text: "خانه",
       url: "/",
       id: 3,
     },
