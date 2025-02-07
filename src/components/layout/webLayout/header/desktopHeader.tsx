@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { headerData } from "@/data/dummyData";
 
 
@@ -13,7 +12,7 @@ const DesktopHeader = () => {
       <ul className="hidden md:flex flex-row items-center justify-center bg-background rounded-xl p-1">
         {headerData.map((item) => (
           <li key={item.id}>
-            <Button variant={"ghost"}>{item.text} </Button>
+            <button>{item.text}</button>
           </li>
         ))}
         <p className="flex flex-row gap-2 items-center absolute left-8">

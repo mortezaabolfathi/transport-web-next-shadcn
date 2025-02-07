@@ -1,7 +1,6 @@
 "use client";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { headerData } from "@/data/dummyData";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import LogoIcon from "@/components/logoIcon";
 import CallBox from "@/components/callBox";
@@ -40,9 +39,9 @@ const MobileHeader = () => {
               key={item.id}
               className="border-b-2 text-white font-semibold text-5xl "
             >
-              <Button variant={"ghost"} className="text-3xl">
+              <button  className="text-3xl">
                 {item.text}{" "}
-              </Button>
+              </button>
             </li>
           ))}
           <span className="absolute bottom-8">

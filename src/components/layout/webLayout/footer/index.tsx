@@ -1,6 +1,5 @@
 import CallBox from "@/components/callBox";
 import LogoIcon from "@/components/logoIcon";
-import { Button } from "@/components/ui/button";
 import { headerData } from "@/data/dummyData";
 import { IoLogoInstagram } from "react-icons/io5";
 import { TbBrandTelegram } from "react-icons/tb";
@@ -57,9 +56,9 @@ const FooterWeb = () => {
           <ul className=" md:flex flex-row  justify-center  rounded-xl p-1">
             {headerData.map((item) => (
               <li key={item.id}>
-                <Button variant={"ghost"} className="hover:font-bold">
+                <button className="hover:font-bold">
                   {item.text}{" "}
-                </Button>
+                </button>
               </li>
             ))}
            
@@ -71,9 +70,9 @@ const FooterWeb = () => {
               <ul className=" md:flex flex-row  justify-center  rounded-xl p-1">
             {connect.map((item) => (
               <li key={item.id}>
-                <Button variant={"ghost"} className="hover:font-bold">
+                <button className="hover:font-bold">
                   {item.text}{" "}
-                </Button>
+                </button>
               </li>
             ))}
            

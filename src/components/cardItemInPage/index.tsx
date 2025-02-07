@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { Button } from "../ui/button";
 interface TCardItemInPage {
   rowRevers?: boolean
   text: {
@@ -33,7 +32,7 @@ const CardItemInPage: React.FC<TCardItemInPage> = ({
         {buttonItem && (
           <div className="flex  justify-end items-start">
           <Link href={buttonItem?.link}>
-            <Button size={"lg"} variant={"link"} >{buttonItem?.textButton}</Button>{" "}
+            <button>{buttonItem?.textButton}</button>{" "}
           </Link>
 
           </div>
