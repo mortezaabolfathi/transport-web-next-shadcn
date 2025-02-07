@@ -2,8 +2,8 @@
 
 export const headerData = [
     {
-      text: "درباره ",
-      url: "/",
+      text: " درباره‌ی ما",
+      url: "/about",
       id: 1,
     },
     {

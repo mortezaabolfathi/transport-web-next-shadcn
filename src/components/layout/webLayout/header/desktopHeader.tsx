@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { headerData } from "@/data/dummyData";
 
-
-
 import React from "react";
 import LogoIcon from "@/components/logoIcon";
 import CallBox from "@/components/callBox";
+import Link from "next/link";
 
 const DesktopHeader = () => {
   return (
@@ -13,14 +12,16 @@ const DesktopHeader = () => {
       <ul className="hidden md:flex flex-row items-center justify-center bg-background rounded-xl p-1">
         {headerData.map((item) => (
           <li key={item.id}>
-            <Button variant={"ghost"}>{item.text} </Button>
+            <Link href={item.url}>
+              <Button variant={"ghost"}>{item.text} </Button>
+            </Link>
           </li>
         ))}
         <p className="flex flex-row gap-2 items-center absolute left-8">
-            <CallBox/>
+          <CallBox />
         </p>
         <p className="flex flex-row gap-2 items-center absolute right-8">
-          <LogoIcon/>
+          <LogoIcon />
         </p>
       </ul>
     </nav>
