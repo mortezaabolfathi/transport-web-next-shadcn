@@ -12,7 +12,7 @@ const AboutPage = () => {
       <div>
         <DesAboutTextTemplate />
       </div>
-      <div>
+      <div className="md:flex justify-center sm:p-0 px-8">
         <AccordionAbutTemplate />
       </div>
     </div>
