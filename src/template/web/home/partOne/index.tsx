@@ -10,6 +10,7 @@ import tower from "@/public/assets/image/tower.png";
 import styleAnimation from "@/style/animation.module.css";
 import styleGlobal from "@/style/global.module.css";
 import Image from "next/image";
+import { itemCardHomePage } from "@/data/cardItemInHomePage";
 
 const OneSection = () => {
   const dataJobs = [
@@ -31,117 +32,22 @@ const OneSection = () => {
   ];
   return (
     <div className={`flex flex-col  ${styleGlobal.homePage}`}>
-      <CardItemInPage
-        // image={ImageSection}
-        text={{
-          textContent:
-            "شرکت ما با سال‌ها تجربه و تخصص در زمینه ترخیص کالا، تمامی مراحل گمرکی را با دقت و سرعت بالا انجام می‌دهد. ما تضمین می‌کنیم که کالاهای شما بدون مشکل و در کمترین زمان ممکن از گمرک ترخیص شوند. تیم ما با آشنایی کامل به قوانین و مقررات بین‌المللی و داخلی، فرآیندهای ترخیص را ساده‌تر کرده و از هرگونه تأخیر و هزینه‌های اضافی جلوگیری می‌کند. هدف ما ارائه خدماتی ایمن، سریع و مقرون‌به‌صرفه برای واردکنندگان و صادرکنندگان است.",
-          textHeader: "ترخیص کالا بدون دردسر، سریع، مطمئن و تخصصی",
-        }}
-        imageBox={
-          <Image
-            src={ImageOne}
-            alt="image-ship"
-            className={` ${styleAnimation.circle}`}
-            width={300}
-          />
-        }
-        buttonItem={{
-          textButton: "مطالعه بیشتر درباره  ترخیص کالا...",
-          link: "/",
-        }}
-      />
-      <CardItemInPage
-        // image={ImageSection}
-        text={{
-          textContent:
-            "بازرگانی یاراد با تیمی متخصص و آشنا به قوانین گمرکی، خدمات جامع در حوزه واردات و صادرات ارائه می‌دهد. ما همراه شما هستیم تا تجارت بین‌المللی را آسان‌تر و کم‌ریسک‌تر کنید. از تهیه اسناد گمرکی تا حمل و نقل بین‌المللی، تمامی مراحل تجاری را به‌صورت حرفه‌ای مدیریت می‌کنیم. همکاری با شبکه گسترده‌ای از شرکای تجاری در سراسر جهان، امکان ارائه بهترین راهکارها برای کاهش هزینه‌ها و افزایش سرعت را برای شما فراهم کرده است.",
-          textHeader: " بازرگانی یاراد، همراه مطمئن شما در تجارت بین‌الملل",
-        }}
-        imageBox={
-          <Image
-            src={ImageTow}
-            alt="image-ship"
-            className={`${styleAnimation.circle}`}
-            width={300}
-          />
-        }
-        buttonItem={{
-          textButton: "مطالعه بیشتر درباره بازرگانی یارد...",
-          link: "/",
-        }}
-        rowRevers={true}
-        boxColor="bg-none"
-      />
-      <CardItemInPage
-        // image={ImageSection}
-        text={{
-          textContent:
-            "از دریافت اسناد تا ترخیص نهایی کالا، تمامی مراحل گمرکی را با دقت و شفافیت انجام می‌دهیم. ما موانع اداری را برطرف کرده و روند ترخیص را سریع و بدون دردسر می‌کنیم. تیم ما با بررسی دقیق قوانین گمرکی و ارائه راهکارهای بهینه، زمان انتظار را به حداقل رسانده و از بروز مشکلات احتمالی جلوگیری می‌کند. هدف ما ارائه خدماتی است که فرآیند ترخیص کالا را برای مشتریان آسان‌تر و بی‌دغدغه‌تر کند.",
-          textHeader: "صفر تا صد ترخیص",
-        }}
-        imageBox={
-          <Image
-            src={ImageThree}
-            alt="image-ship"
-            className={` ${styleAnimation.circle}`}
-            width={300}
-          />
-        }
-        buttonItem={{
-          textButton: "مطالعه بیشتر درباره  ترخیص کالا...",
-          link: "/",
-        }}
-      />
-      <CardItemInPage
-        // image={ImageSection}
-        text={{
-          textContent:
-            "ما حمل و نقل بین‌المللی را از مبدا تا گمرک ایران با بهترین شرایط و هزینه انجام می‌دهیم. امنیت، سرعت و دقت در ارسال کالا، اولویت اصلی ماست. با استفاده از روش‌های حمل‌ونقل هوایی، زمینی و دریایی، متناسب با نوع کالا و نیاز مشتری، بهترین مسیر را انتخاب کرده و اطمینان حاصل می‌کنیم که بار شما در کمترین زمان و با هزینه مناسب به مقصد برسد.",
-          textHeader: "حمل از مبدا به گمرک ایران",
-        }}
-        imageBox={
-          <Image
-            src={ImageFor}
-            alt="image-ship"
-            className={`rounded-full ${styleAnimation.circle}`}
-            width={300}
-          />
-        }
-        buttonItem={{
-          textButton: "مطالعه بیشتر درباره حمل از مبدا...",
-          link: "/",
-        }}
-        rowRevers={true}
-        boxColor="bg-none"
-      />
-      <CardItemInPage
-        // image={ImageSection}
-        text={{
-          textContent:
-            "با تخصص در فرآیندهای اداری، ثبت سفارش کالاهای وارداتی را در کوتاه‌ترین زمان ممکن انجام می‌دهیم. ما اطمینان حاصل می‌کنیم که تمامی مراحل قانونی به‌درستی طی شود. آگاهی از تغییرات قوانین و مقررات ثبت سفارش به ما کمک می‌کند تا روند اخذ مجوزها را بدون مشکل پیش ببریم و از تأخیرهای احتمالی جلوگیری کنیم.",
-
-          textHeader:
-            "ثبت سفارش بدون دردسر، اخذ مجوزهای قانونی در کوتاه‌ترین زمان",
-        }}
-        imageBox={
-          <Image
-            src={ImageFive}
-            alt="image-ship"
-            className={` ${styleAnimation.circle}`}
-            width={300}
-          />
-        }
-        buttonItem={{
-          textButton: "مطالعه بیشتر درباره مجوزهای قانونی...",
-          link: "/",
-        }}
-      />
+      {itemCardHomePage.map((item) => {
+        return (
+          <span key={item.id}>
+            <CardItemInPage
+              imageBox={item.image}
+              text={item.text}
+              boxColor={item.boxColor}
+              buttonItem={item.buttonItem}
+              rowRevers={item.rowRevers}
+            />
+          </span>
+        );
+      })}
       <div className="flex flex-col gap-6 justify-center ">
         <div className="w-full flex items-centert">
-
           <p className="text-blue-300 text-xl mx-4">تجارت خود را پیش ببرید</p>
-      
         </div>
         <div className="grid grid-cols-3  ">
           {dataJobs?.map((item) => (

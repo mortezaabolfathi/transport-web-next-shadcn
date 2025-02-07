@@ -8,7 +8,6 @@ interface TCardItemInPage {
     textHeader: string;
   };
   boxColor ?: string;
-  animationImage?: string;
   imageBox : React.ReactNode;
   buttonItem?: {
     textButton: string;
