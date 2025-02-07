@@ -13,7 +13,7 @@ export const headerData = [
     },
     {
       text: "ارتباط با ما",
-      url: "/",
+      url: "/contactUs",
       id: 3,
     },
     {
