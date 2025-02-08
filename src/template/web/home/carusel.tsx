@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Carousel = () => {
+const CarouselTemplate = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index: any, className = "") {
@@ -51,4 +51,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselTemplate;

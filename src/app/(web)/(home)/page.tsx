@@ -1,17 +1,15 @@
-import React from "react";
-import dynamic from "next/dynamic";
-import HeroSectionHomePage from "@/template/web/home/heroSection";
-import Carousel from "@/template/web/home/partOne/carusel";
-const SectionOne = dynamic(() => import("@/template/web/home/partOne"));
+import DoingBusiness from "@/components/doingBusiness";
+import CardsItem from "@/template/web/home/cardItem";
+import Carousel from "@/template/web/home/carusel";
+import TitleHomePageTemplate from "@/template/web/home/titile";
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div className="flex flex-col">
       <Carousel />
-      {/* <div className="flex items-center justify-center container">
-        <Slider />
-      </div> */}
-      <SectionOne />
+      <TitleHomePageTemplate />
+      <CardsItem />
+      <DoingBusiness />
     </div>
   );
 };
