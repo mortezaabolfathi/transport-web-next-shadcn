@@ -53,7 +53,7 @@ const AccordionService = () => {
       {data?.map((item) => {
         return (
           <AccordionItem value={`item-${item.id}`} className="md:mt-4">
-            <AccordionTrigger className="font-bold text-xl text-left">
+            <AccordionTrigger className="font-bold text-xl text-start">
               {item.title}
             </AccordionTrigger>
             <AccordionContent className="text-lg">{item.text}</AccordionContent>

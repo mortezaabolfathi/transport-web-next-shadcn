@@ -70,8 +70,8 @@ const FooterWeb = () => {
           <ul className="p-1 flex flex-row">
             {connect.map((item) => (
               <li key={item.id}>
-                <Button variant={"ghost"} className="hover:font-bold">
-                  {item.text}{" "}
+                <Button variant={"ghost"} className="hover:font-bold" >
+                 {item.icon} {item.text}{" "}
                 </Button>
               </li>
             ))}

@@ -8,10 +8,10 @@ const CallBox:React.FC<TCallBox>= ({color="text-gray-700" , size=20}) => {
     <>
       <IoCallOutline size={size}  />
           <a
-            href="tel:+982112345678"
+            href="tel:+09144040525"
             className= {`${color} hover:text-green-500 font-bold md:text-base text-3xl`}
           >
-            021-12345678
+            09144040525
           </a>
     </>
   )

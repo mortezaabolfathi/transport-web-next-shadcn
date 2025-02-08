@@ -10,11 +10,14 @@ export const doingBusiness = [
     {
       text: "ترخیص کالای هوایی",
       image: airplane,
-      id: 1,
+      id: 2,
     },
     {
       text: "ترخیص کالای زمینی",
       image: tower,
-      id: 1,
+      id: 3,
     },
   ];
+
+
+  
