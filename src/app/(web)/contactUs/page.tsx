@@ -1,16 +1,8 @@
-import DoingBusiness from "@/components/doingBusiness";
-import TextContactUs from "@/template/web/contactUs/textContactUs";
-import { CardWithForm } from "@/template/web/contactUs/formConactUs";
-import React from "react";
+import dynamic from "next/dynamic";
+const ContactUsTemplate = dynamic(() => import("@/template/web/contactUs"));
 
 const ContactUs = () => {
-  return (
-    <>
-      <DoingBusiness />
-      <TextContactUs />
-      <CardWithForm/>
-    </>
-  );
+  return <ContactUsTemplate />;
 };
 
 export default ContactUs;
