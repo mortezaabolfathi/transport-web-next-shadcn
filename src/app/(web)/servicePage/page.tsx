@@ -1,18 +1,11 @@
-import DoingBusiness from '@/components/doingBusiness'
-import AccordionService from '@/template/web/servicePage/accordionService'
-import React from 'react'
+import dynamic from "next/dynamic";
+import Loading from "@/app/loading";
+const ServicesTemplate = dynamic(() => import("@/template/web/servicePage"), {
+  loading: () => <Loading />,
+});
 
 const ServicesPage = () => {
-  return (
-    <div className='flex flex-col gap-4'>
-        <div>
-            <DoingBusiness/>
-        </div>
-        <>
-            <AccordionService/>
-        </>
-    </div>
-  )
-}
+  return <ServicesTemplate />;
+};
 
-export default ServicesPage
+export default ServicesPage;
