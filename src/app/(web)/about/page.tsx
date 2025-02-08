@@ -1,18 +1,11 @@
-import { AccordionAbutTemplate } from "@/template/web/about/accordionAbut";
-import DesAboutTextTemplate from "@/template/web/about/desAbutText";
-import HeroSectionTemplateAbutPage from "@/template/web/about/heroSectionAbut";
-import React from "react";
+import Loading from "@/app/loading";
+import dynamic from "next/dynamic";
+const AboutPageTemplate = dynamic(() => import("@/template/web/about"), {
+  loading:()=><Loading/>
+});
 
 const AboutPage = () => {
-  return (
-    <div className="flex flex-col">
-        <HeroSectionTemplateAbutPage />
-        <DesAboutTextTemplate />
-      <div className="md:flex justify-center sm:p-0 px-8">
-        <AccordionAbutTemplate />
-      </div>
-    </div>
-  );
+  return <AboutPageTemplate />;
 };
 
 export default AboutPage;

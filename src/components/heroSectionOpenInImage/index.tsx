@@ -12,6 +12,8 @@ const HeroSectionOpenInImage:React.FC<THeroSectionOpenInImage> = ({des, image, t
     <div className="relative z-0 ">
       <div className={`${style.openInToOut}`}>
         <Image
+          placeholder="blur"
+          loading="lazy"
           src={image}
           alt="Hero"
           className="w-full object-cover rounded-xl opacity-80"
