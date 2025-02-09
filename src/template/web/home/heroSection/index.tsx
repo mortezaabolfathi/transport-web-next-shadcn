@@ -13,7 +13,7 @@ const HeroSectionHomePage = () => {
       </div>
       <div className="md:absolute top-0  w-full text-primary md:flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-6xl font-bold">
-          به وب‌سایت ما خوش آمدید
+          به وب‌ سایت ما خوش آمدید
         </h1>
        <p className="text-2xl text-center bg-">
        بهترین تجربه را با ما داشته باشید
