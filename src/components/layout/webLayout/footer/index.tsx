@@ -18,14 +18,14 @@ const FooterWeb = () => {
       id: 1,
     },
     {
-      text: "واتس",
-      url: "/",
+      text: "وانس اپ",
+      url: "https://wa.me/989144040525?text=سلام%2C%20می‌خواهم%20با%20شما%20در%20تماس%20باشم.",
       icon: <AiOutlineWhatsApp />,
       id: 2,
     },
     {
       text: "تلگرام",
-      url: "/",
+      url: "https://t.me/@masoudap",
       icon: <TbBrandTelegram />,
       id: 3,
     },
