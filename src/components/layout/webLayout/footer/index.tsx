@@ -18,7 +18,7 @@ const FooterWeb = () => {
       id: 1,
     },
     {
-      text: "وانس اپ",
+      text: "واتس اپ",
       url: "https://wa.me/989144040525?text=سلام%2C%20می‌خواهم%20با%20شما%20در%20تماس%20باشم.",
       icon: <AiOutlineWhatsApp />,
       id: 2,
@@ -70,9 +70,12 @@ const FooterWeb = () => {
           <ul className="p-1 flex flex-row">
             {connect.map((item) => (
               <li key={item.id}>
+                <Link href={item.url}>
                 <Button variant={"ghost"} className="hover:font-bold" >
                  {item.icon} {item.text}{" "}
                 </Button>
+                
+                </Link>
               </li>
             ))}
           </ul>
