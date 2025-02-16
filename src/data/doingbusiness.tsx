@@ -1,6 +1,6 @@
-import airplane from "@/public/assets/image/airplane.png";
-import ship from "@/public/assets/image/ship.png";
-import tower from "@/public/assets/image/tower.png";
+import airplane from "@/app/public/assets/image/airplane.png";
+import ship from "@/app/public/assets/image/ship.png";
+import tower from "@/app/public/assets/image/tower.png";
 export const doingBusiness = [
     {
       text: "ترخیص کالای دریایی",

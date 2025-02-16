@@ -1,4 +1,4 @@
-import ImageCompany from "@/public/assets/image/heroImage.webp";
+import ImageCompany from "@/app/public/assets/image/heroImage.webp";
 import style from "@/style/animation.module.css";
 import Image from "next/image";
 const HeroSectionHomePage = () => {

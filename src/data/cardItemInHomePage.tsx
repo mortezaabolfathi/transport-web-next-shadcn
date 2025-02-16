@@ -1,8 +1,8 @@
-import ImageOne from "@/public/assets/image/customs_officer_2.jpg";
-import ImageTow from "@/public/assets/image/59858.jpg";
-import ImageThree from "@/public/assets/image/6226335.jpg";
-import ImageFor from "@/public/assets/image/20945971.jpg";
-import ImageFive from "@/public/assets/image/supply_16.jpg";
+import ImageOne from "@/app/public/assets/image/customs_officer_2.jpg";
+import ImageTow from "@/app/public/assets/image/59858.jpg";
+import ImageThree from "@/app/public/assets/image/6226335.jpg";
+import ImageFor from "@/app/public/assets/image/20945971.jpg";
+import ImageFive from "@/app/public/assets/image/supply_16.jpg";
 import Image from "next/image";
 import styleAnimation from "@/style/animation.module.css";
 
