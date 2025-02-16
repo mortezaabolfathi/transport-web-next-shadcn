@@ -2,7 +2,7 @@ name: CD-Liara
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,4 +17,4 @@ jobs:
           LIARA_TOKEN: ${{ secrets.LIARA_API_TOKEN }}
         run: |
           npm i -g @liara/cli@7
-          liara deploy --app="yarad-iran" --api-token="YARAD_SECRET" --no-app-logs
+          liara deploy --app="yarad-iran" --api-token="$LIARA_TOKEN" --no-app-logs
