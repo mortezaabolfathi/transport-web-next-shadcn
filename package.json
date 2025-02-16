@@ -6,11 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "copy": "mv ./.next/static ./.next/standalone/; cp -r ./public ./.next/standalone/",
-    "cleanup": "rm -r node_modules",
-    "migrate:local": "dotenv -e .env.local -- npx prisma migrate dev",
-    "pull:local": "dotenv -e .env.local -- npx prisma db pull"
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.3",
