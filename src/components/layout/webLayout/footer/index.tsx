@@ -13,20 +13,20 @@ const FooterWeb = () => {
   const connect = [
     {
       text: "اینستا ",
-      icon: <IoLogoInstagram />,
+      icon: <IoLogoInstagram color="red" />,
       url: "/",
       id: 1,
     },
     {
       text: "واتس اپ",
       url: "https://wa.me/989144040525?text=سلام%2C%20می‌خواهم%20با%20شما%20در%20تماس%20باشم.",
-      icon: <AiOutlineWhatsApp />,
+      icon: <AiOutlineWhatsApp color="green"/>,
       id: 2,
     },
     {
       text: "تلگرام",
       url: "https://t.me/@masoudap",
-      icon: <TbBrandTelegram />,
+      icon: <TbBrandTelegram  color="blue"/>,
       id: 3,
     },
   ];
@@ -66,7 +66,7 @@ const FooterWeb = () => {
           </ul>
         </div>
         <div className=" flex flex-col md:items-start items-center justify-center">
-          <p className="text-xl font-bold">راه‌های ارتباطی با بازرگانی یارد</p>
+          <p className="text-xl font-bold">راه‌های ارتباطی با بازرگانی یاراد</p>
           <ul className="p-1 flex flex-row">
             {connect.map((item) => (
               <li key={item.id}>

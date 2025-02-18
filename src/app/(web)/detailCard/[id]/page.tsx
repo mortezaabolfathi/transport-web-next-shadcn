@@ -13,7 +13,7 @@ const DetailCardItem = ({ params }: any) => {
       <div className=" grid md:grid-cols-2">
         <div className="flex flex-col gap-3">
           <h1 className="font-bold md:text-3xl text-2xl">{dataCard?.text.textHeader}</h1>
-          <p className="md:text-base/8 pr-4 text-2xl/10">{dataCard?.text?.textContent}</p>
+          <p className="md:text-base/8 pr-4 text-xl/8">{dataCard?.text?.textContent}</p>
         </div>
         <span className="flex h-screen md:h-auto justify-center items-center md:static text-blue-800 z-0 fixed  sm:opacity-100 opacity-10 ">
           <ImageLogoForDetailCard/>
