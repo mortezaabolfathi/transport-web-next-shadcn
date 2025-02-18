@@ -2,7 +2,7 @@
   "app": "yarad-iran",
   "port": 3000,
   "build": {
-    "location": "public" 
+    "location": "iran"
   },
   "disks": []
 }
